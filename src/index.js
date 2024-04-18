@@ -21,7 +21,7 @@ function run() {
       const turndown = new TurndownService();
       const markdown = turndown.turndown(response.body);
 
-      // Extract content from specific tags (modify as needed)
+      // Extract content from specific tags 
       const texts = [];
       markdown.querySelectorAll('article').forEach((tag) => {
         texts.push(...tag.querySelectorAll(text => text.textContent));
